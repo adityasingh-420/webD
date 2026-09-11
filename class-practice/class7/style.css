@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(70, 15, 114);
+}
+
+#box1{
+    width: 1000px;
+    height: 700px;
+    background-color: pink;
+}
+
+#box2{
+    width: 800px;
+    height: 600px;
+    background-color: rgb(255, 249, 249);
+}
+
+#box3{
+    width: 600px;
+    height: 500px;
+    background-color: rgb(192, 7, 7);
+}
+
+#task1{
+    width: 700px;
+    height: 300px;
+    background-color: azure;
+}
+
+#task2{
+    width: 200px;
+    height: 100px;
+    border-radius: 23%;
+    background-color: yellow;
+    
+
+}
+
+#task3{
+    width: 250px;
+    height: 100px;
+    border-radius: 45%;
+    background-color: rgb(40, 196, 108);
+    
+
+}
+
