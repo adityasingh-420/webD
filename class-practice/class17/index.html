@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            perspective: 900px;
+        }
+        #main{
+            width: 700px;
+            height: 900px;
+            margin: 200px auto;
+            position: relative;
+            transition: 3s;
+            transform-style: preserve-3d;
+        }
+        #cardA{
+            width: 100%;
+            height: 50%;
+            background-color: blueviolet;
+            position: absolute;
+            z-index: 1;
+            backface-visibility: hidden;
+        }
+        #cardB{
+            width: 100%;
+            height: 50%;
+            background-color: chartreuse;
+            position: absolute;
+            transform: rotateY(180deg);
+
+            
+            
+        }
+
+        #main:hover{
+            transform: rotateY(180deg);
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div id="cardA">
+            <img src="https://imgs.search.brave.com/KcevKARTm0kzOiqEq7fSMsBv3MJ3hPETYEreZ9DUOyo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vYm93bC1kZWxp/Y2lvdXMtZHJ5LWNh/dC1mb29kLWNhdC1w/YXdzLXRvcC12aWV3/XzE1OTg5NTEtNTcz/LmpwZz9nYT1HQTEu/MS4xMTI4ODUzODE4/LjE3ODQ0NDk4MDYm/c2VtdD1haXNfdGVz/dF9iJnc9NzQwJnE9/ODA">
+        </div>
+        <div id="cardB">
+            <img src="https://imgs.search.brave.com/aPMY0iaqLDe0DT8vy_UL25Q3t4TVIY6D1abWQNK5dzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzAyLzYyLzgx/LzM2MF9GXzEwMjYy/ODE1NV9aUGlBYU5F/RFJTWlUyUzBMQWti/Y2d2d0x5TW1yOWMy/WS5qcGc">
+        </div>
+    </div>
+    
+</body>
+</html>

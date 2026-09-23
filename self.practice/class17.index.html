@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        perspective: 900px;
+        /* 3d effect */
+    }
+    #main{
+        height: 900px;
+        width: 500px;
+        margin: 100px auto;
+        position: relative;
+        transition: 3s;
+        transform-style: preserve-3d;
+        /* #property -- ye piche vale card ko show kare ga when whole card is rotated */
+        
+
+    }
+
+    #card1{
+        height: 50%;
+        width: 100%;
+        background-color: blueviolet;
+        color: snow;
+        position: absolute;
+        /* card ko ek ke uper ek laga na */
+        z-index: 1;
+        /* card1 ,aage ajaye ga card2Rotated */
+        backface-visibility: hidden;
+        /* #property -- ye piche vale card ko show kare ga when whole card is rotated */
+
+        
+    }
+
+    #card2{
+        height: 50%;
+        width: 100%;
+        background-color: brown;
+        color: snow;
+        position: absolute;
+        /* card ko ek ke uper ek laga na */
+        transform: rotateY(180deg);
+        /* card 2 (piche vala card) palat jaye so that jab pure card ke deck ko rotate kare tho ,us ka back part sidha dekha  */
+    }
+
+    #main:hover{
+        transform: rotateY(180deg);
+        /* pure card ko rotate kare ga  */
+
+    }
+</style>
+<body>
+
+    <div id="main">
+        <div id="card1">Card 1</div>
+        <div id="card2">Card 2</div>
+    </div>
+    
+</body>
+</html>
