@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            justify-content: left;
+            align-items: center;
+            justify-content: space-around;
+
+
+        }
+        
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: aqua;
+
+            
+            
+
+            margin-top: 50vh;
+            animation-name:anime ;
+            animation-duration: 900ms;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function: ease-in-out;
+            
+
+        }
+        .ball:nth-child(1){
+            background-color: aqua;
+        }
+
+        .ball:nth-child(2){
+            background-color: aquamarine;
+            animation-delay: 0.2s;
+        }
+
+        .ball:nth-child(3){
+            background-color: azure;
+            animation-delay:0.4 ;
+        }
+
+        @keyframes anime {
+            0%{
+                transform: translateY(0) scale(1);
+                opacity: 0.5;
+            }
+
+            50%{
+                transform: translateY(-40px) scale(1.3);
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(0) scale(1);
+                opacity: 0.5;
+            }
+            
+        }
+
+       
+
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div id="one" class="ball"></div>
+    <div id="two" class="ball"></div>
+    <div id="three" class="ball"></div>
+</div>
+    
+
+    
+    
+</body>
+</html>

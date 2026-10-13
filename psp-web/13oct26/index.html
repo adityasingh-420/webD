@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .carousel{
+            margin:100px auto;
+            width: 90%;
+            border: 5px solid black;
+            display: flex;
+            overflow: hidden;
+            
+        }
+        .group{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            gap: 1em;
+            padding-right: 20px;
+        }
+        .track{
+            display: flex;
+            animation: scroll 12s linear infinite;
+            width: max-content;
+        }
+        .card{
+            height: 30vh;
+            width: 200px;
+            padding: 2vh;
+            background: rgb(88, 218, 230);
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid rgb(248, 246, 246);
+            
+        }
+        @keyframes scroll{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+
+    </style>
+</head>
+<body><div class="carousel">
+ <div class="track">
+    <div class="group">
+        <div id="one" class="card">1</div>
+        <div id="two" class="card">2</div>
+        <div id="three" class="card">3</div>
+        <div id="four" class="card">4</div>
+        <div id="five" class="card">5</div>
+        <div id="six" class="card">6</div>
+     </div>
+    <div class="group">
+     <div class="card">1</div>
+     <div class="card">2</div>
+     <div class="card">3</div>
+     <div class="card">4</div>
+     <div class="card">5</div>
+     <div class="card">6</div>
+     </div>
+ </div>
+</div>
+</body>
+</html>

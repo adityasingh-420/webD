@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #parent{
+            width: 400px;
+            height: 200px;
+            border-radius: 20px;
+            display: grid;
+            gap: 20px;
+            padding-left: 280px;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 200px 200px 200px 200px;
+        }
+        .grid{
+        
+            border: 2px solid;
+            border-radius: 20px;
+            
+
+        }
+
+        #a{
+            background: linear-gradient(pink,red);
+        }
+        #b{
+            background: linear-gradient(to right ,pink,red);
+        }
+        #c{
+            background: linear-gradient( to left,pink,red);
+        }
+        #d{
+            background: linear-gradient(to top,pink,red);
+        }
+        #e{
+            background: linear-gradient(to bottom,pink,red);
+        }
+        #f{
+            background: linear-gradient(45deg,pink,red);
+        }
+        #g{
+            background: linear-gradient(to right,pink,hotpink,purple,red);
+        }
+        #h{
+            background: linear-gradient(to right, pink 10%,hotpink 20%, rgb(196, 26, 54) 30% , purple 40% ,red 50%);
+        }
+        #i{
+                background: radial-gradient(pink,hotpink,red);    
+        }
+        #j{
+            background: radial-gradient(circle,pink,hotpink,orange,red);
+        }
+        #k{
+            background: radial-gradient(circle at top left,red,orange,pink);
+        }
+        #l{
+            background: radial-gradient(circle at top right,red,orange,pink);
+        }
+
+    </style>
+</head>
+<body>
+
+     <div id="content">
+        <center>
+            <h1 style="color: aliceblue;">CSS GRADIENTS</h1>
+        </center></div>
+    <div id="parent">
+ 
+
+    <div id="a" class="grid"></div>
+        <div id="b" class="grid"></div>
+        <div id="c" class="grid"></div>
+        <div id="d" class="grid"></div>
+        <div id="e" class="grid"></div>
+        <div id="f" class="grid"></div>
+        <div id="g" class="grid"></div>
+        <div id="h" class="grid"></div>
+        <div id="i" class="grid"></div>
+        <div id="j" class="grid"></div>
+        <div id="k" class="grid"></div>
+        <div id="l" class="grid"></div>
+
+
+        
+        
+        
+    </div>
+    
+</body>
+</html>
