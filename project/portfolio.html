@@ -54,6 +54,7 @@
             border-radius: 50px;
             height: 30px;
             width: 100px;
+            border: 1px solid;
             
         }
 
@@ -72,7 +73,7 @@
         }
 
         #firstHeading span{
-            color: red;
+            color:red;
 
         }
 
@@ -99,29 +100,87 @@
         }
 
         #frontB1{
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             color: aliceblue;
         }
         #frontB2{
-            background-color: aliceblue;
+            background-color: rgb(255, 255, 255);
             color: black;
         }
 
-        #animation{
-            background-color: aqua;
-            height: 400px;
-            width: 50vw;
+        .firstPG{
             display: flex;
-            align-items: 500px;
+            /* background-color: rgb(111, 255, 207); */
+            height: 320px;
+        }
+
+        .carrousel{
+            width: 100vw;
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
 
         }
+        .track{
+            width:100vw;
+            font-size: 20px;
+            background-color:rgb(0, 0, 0);
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            animation-name: anime;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes anime {
+            0%{
+                transform: translateX(0%);
+
+            }
+            100%{
+                transform: translateX(-50%);
+
+            }
+            
+        }
+
+        #page01{
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #para01{
+            width: 300px;
+            height: 500px;
+            font-size: 19px;
+            position: relative;
+            left: 100px;
+            top: 20px;
+        }
+        #about{
+            color: red;
+            font-size: 100px;
+        }
+        .head01{
+                font-size: 60px;
+            }
+
+        
 
 
 
     </style>
 </head>
 <body>
-    <div id="nav">
+    
+        <div id="nav">
         <div id="brand">A<span id="bSymbol">.</span></div>
         <div id="info">
             <a class="navbar" href="">home</a>
@@ -139,7 +198,7 @@
 
     <br><br><br><br>
 
-    <div>
+    <div class="firstPG">
         <div id="firstContant">
             <button id="workbutton">🟢  Available for work</button>
         
@@ -162,9 +221,45 @@
         </div>
     </div>
 
-    <div id="animation">
+    
+    
+    <div class="firstPG" id="animation">
         <div id="animation1"></div>
         <div id="animation2"></div>
+    </div>
+
+    <br><br><br>
+
+    <div class="carrousel">
+        <div class="track">
+            <span class="text">♦️ Web Devlopment</span>
+            <span class="text">♦️ AI Agent Expercet</span>
+            <span class="text">♦️ Trading Manager</span>
+            <span class="text">♦️ Dev Ops Tranner</span>
+        </div>
+    </div>
+
+    <div id="page01">
+        <div class="about">
+            <h6 style="color: red; font-size: 15px;">01 - About</h6>
+        </div>
+        <div>
+            <h1 class="head01">Turning ideas</h1>
+            <h1 class="head01">into <span style="color: red;">beautiful</span></h1>
+            <h1 class="head01">experiences</h1>
+        </div>
+        <div id="para01">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br>
+                 Iusto exercitationem atque earum molestiae esse eaque incidunt nisi 
+                 <br>
+                 <br>
+                 eos tempore accusamus fugit nesciunt dolore praesentium assumenda similique corporis sapiente, at sit.
+                
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quas ex harum in dolorum minus corporis iusto a
+                <br> 
+                <br>suscipit ab nihil quidem provident ratione dolore laudantium aliquid expedita adipisci temporibus?</p>
+        </div>
     </div>
     
 </body>
